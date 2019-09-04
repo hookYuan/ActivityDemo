@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo;
+package cn.yuan.demo.activitydemo;
 
 import android.content.Intent;
 
@@ -22,8 +22,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import cn.yuan.activitydemo.intentflag.FlagActivity;
-import cn.yuan.activitydemo.startupmode.StandardActivity;
+import cn.yuan.demo.R;
+import cn.yuan.demo.activitydemo.intentflag.FlagActivity;
+import cn.yuan.demo.activitydemo.startupmode.StandardActivity;
+import yuan.core.title.ActionBarUtil;
 import yuan.core.tool.RouteUtil;
 
 
@@ -38,12 +40,17 @@ import yuan.core.tool.RouteUtil;
  * @author yuanye
  * @date 2019/9/3 14:10
  */
-public class MainActivity extends AppCompatActivity {
+public class ActActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_act);
+        ActionBarUtil.create(this)
+                .setTextColor(getColor(R.color.white))
+                .setLeftIcon(R.drawable.ic_base_back_white)
+                .setTitleText("Activity Demo")
+                .setLeftClickFinish();
     }
 
     public void onClick(View view) {

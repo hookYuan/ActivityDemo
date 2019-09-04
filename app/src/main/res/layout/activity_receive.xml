@@ -6,21 +6,26 @@
 	android:layout_height="match_parent"
 	android:gravity="center_horizontal"
 	android:orientation="vertical"
-	tools:context=".MainActivity">
+	android:paddingLeft="@dimen/size_16"
+	android:paddingRight="@dimen/size_16"
+	tools:context="cn.yuan.demo.ipcdemo.bundle.ReceiveActivity">
 
-
-	<Button
-		android:id="@+id/btn_start_up_mode"
+	<TextView
+		android:id="@+id/text_process"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:onClick="onClick"
-		android:text="Activity启动模式" />
+		android:layout_marginTop="@dimen/size_16"
+		android:textColor="@color/colorFont33"
+		android:textSize="@dimen/font_15"
+		/>
 
-	<Button
-		android:id="@+id/btn_intent_flag"
+	<TextView
+		android:id="@+id/text_receive"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:onClick="onClick"
-		android:text="Intent标记 flag" />
+		android:layout_marginTop="@dimen/size_16"
+		android:textColor="@color/colorFont33"
+		android:textSize="@dimen/font_15"
+		/>
 
 </LinearLayout>

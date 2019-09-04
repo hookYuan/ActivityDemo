@@ -13,15 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo.startupmode;
+package cn.yuan.demo.activitydemo.startupmode;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-import cn.yuan.activitydemo.R;
-import cn.yuan.activitydemo.lifecycle.LifeActivity;
+import cn.yuan.demo.R;
 import yuan.core.title.ActionBarUtil;
 
 /**

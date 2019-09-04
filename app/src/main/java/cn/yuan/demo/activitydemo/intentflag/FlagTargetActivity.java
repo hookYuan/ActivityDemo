@@ -1,7 +1,7 @@
-package cn.yuan.activitydemo.intentflag;
+package cn.yuan.demo.activitydemo.intentflag;
 
-import cn.yuan.activitydemo.R;
-import cn.yuan.activitydemo.lifecycle.LifeActivity;
+import cn.yuan.demo.R;
+import cn.yuan.demo.activitydemo.lifecycle.LifeActivity;
 import yuan.core.title.ActionBarUtil;
 
 import android.os.Bundle;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="cn.yuan.activitydemo">
+	package="cn.yuan.demo">
 
 	<application
 		android:allowBackup="true"
@@ -9,26 +9,10 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme">
-
-		<activity android:name=".intentflag.FlagTargetActivity"></activity>
-		<activity android:name=".intentflag.FlagActivity" />
-
 		<activity
-			android:name=".startupmode.AffinityActivity"
-			android:allowTaskReparenting="true"
-			android:taskAffinity="yuan.affinity"></activity>
-		<activity
-			android:name=".startupmode.SingleInstanceActivity"
-			android:launchMode="singleInstance" />
-		<activity
-			android:name=".startupmode.SingleTaskActivity"
-			android:launchMode="singleTask" />
-		<activity
-			android:name=".startupmode.SingleTopActivity"
-			android:launchMode="singleTop" />
-		<activity
-			android:name=".startupmode.StandardActivity"
-			android:launchMode="standard" />
+			android:name=".ipcdemo.bundle.ReceiveActivity"
+			android:process=":receive"></activity>
+		<activity android:name=".ipcdemo.bundle.SendActivity" />
 		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -36,6 +20,26 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity android:name=".ipcdemo.IPCActivity" />
+		<activity android:name=".activitydemo.intentflag.FlagTargetActivity" />
+		<activity android:name=".activitydemo.intentflag.FlagActivity" />
+		<activity
+			android:name=".activitydemo.startupmode.AffinityActivity"
+			android:allowTaskReparenting="true"
+			android:taskAffinity="yuan.affinity" />
+		<activity
+			android:name=".activitydemo.startupmode.SingleInstanceActivity"
+			android:launchMode="singleInstance" />
+		<activity
+			android:name=".activitydemo.startupmode.SingleTaskActivity"
+			android:launchMode="singleTask" />
+		<activity
+			android:name=".activitydemo.startupmode.SingleTopActivity"
+			android:launchMode="singleTop" />
+		<activity
+			android:name=".activitydemo.startupmode.StandardActivity"
+			android:launchMode="standard" />
+		<activity android:name=".activitydemo.ActActivity" />
 	</application>
 
 </manifest>

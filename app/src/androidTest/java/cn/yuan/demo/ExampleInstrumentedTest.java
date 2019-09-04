@@ -1,4 +1,4 @@
-package cn.yuan.activitydemo;
+package cn.yuan.demo;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;

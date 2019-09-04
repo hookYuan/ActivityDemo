@@ -13,24 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo.startupmode;
+package cn.yuan.demo.activitydemo.startupmode;
 
 import android.os.Bundle;
 
-import cn.yuan.activitydemo.R;
+import cn.yuan.demo.R;
 import yuan.core.title.ActionBarUtil;
 
 /**
- * 描述：指定affinity
- * <p>
- * taskAffinity 单独使用并不会生效。
- * 要想其生效，需要配合其他属性使用，或者配合 Intent.FLAG_ACTIVITY_NEW_TASK，或者配合
- * allowTaskReparenting 。使用时用其中的一个就行，下面将详细介绍这两个属性。
+ * 描述：默认启动模式
  *
  * @author yuanye
- * @date 2019/9/3 16:45
+ * @date 2019/9/3 14:17
  */
-public class AffinityActivity extends StartUpActivity {
+public class StandardActivity extends StartUpActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +34,8 @@ public class AffinityActivity extends StartUpActivity {
         ActionBarUtil.create(this)
                 .setTextColor(getColor(R.color.white))
                 .setLeftIcon(R.drawable.ic_base_back_white)
-                .setTitleText("TaskAffinity属性")
+                .setTitleText("默认启动模式:standard")
                 .setLeftClickFinish();
     }
+
 }

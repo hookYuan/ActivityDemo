@@ -1,4 +1,4 @@
-package cn.yuan.activitydemo;
+package cn.yuan.demo;
 
 import org.junit.Test;
 

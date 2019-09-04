@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo.startupmode;
+package cn.yuan.demo.activitydemo.startupmode;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import cn.yuan.activitydemo.R;
-import cn.yuan.activitydemo.lifecycle.LifeActivity;
+import cn.yuan.demo.R;
+import cn.yuan.demo.activitydemo.lifecycle.LifeActivity;
 
 /**
  * 描述：
@@ -67,7 +67,9 @@ class StartUpActivity extends LifeActivity {
                 startActivity(intent4);
                 break;
             case R.id.btn_affinity:
+                /*Manifest 中配置taskAffinity后 设置FLAG_ACTIVITY_NEW_TASK或者 singleTask*/
                 Intent intent5 = new Intent(this, AffinityActivity.class);
+                intent5.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent5);
                 break;
         }

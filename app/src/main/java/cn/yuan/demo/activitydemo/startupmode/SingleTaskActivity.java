@@ -13,24 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo.startupmode;
+package cn.yuan.demo.activitydemo.startupmode;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-import cn.yuan.activitydemo.R;
-import cn.yuan.activitydemo.lifecycle.LifeActivity;
+import cn.yuan.demo.R;
 import yuan.core.title.ActionBarUtil;
 
 /**
- * 描述：栈顶唯一
+ * 描述：任务栈唯一
  *
  * @author yuanye
- * @date 2019/9/3 14:58
+ * @date 2019/9/3 15:02
  */
-public class SingleTopActivity extends StartUpActivity {
+public class SingleTaskActivity extends StartUpActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +34,7 @@ public class SingleTopActivity extends StartUpActivity {
         ActionBarUtil.create(this)
                 .setTextColor(getColor(R.color.white))
                 .setLeftIcon(R.drawable.ic_base_back_white)
-                .setTitleText("栈顶唯一模式:singleTop")
+                .setTitleText("栈内单例模式:singleTop")
                 .setLeftClickFinish();
     }
-
 }

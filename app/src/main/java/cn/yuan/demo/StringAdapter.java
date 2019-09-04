@@ -1,4 +1,4 @@
-package cn.yuan.activitydemo.intentflag;
+package cn.yuan.demo;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import yuan.core.list.RecyclerAdapter;
  * @author yuanye
  * @date 2019/9/3 15:46
  */
-public class FlagAdapter extends RecyclerAdapter<String> {
+public class StringAdapter extends RecyclerAdapter<String> {
 
-    public FlagAdapter(List<String> data) {
+    public StringAdapter(List<String> data) {
         super(data, android.R.layout.simple_list_item_1);
     }
 

@@ -6,22 +6,21 @@
 	android:layout_height="match_parent"
 	android:gravity="center_horizontal"
 	android:orientation="vertical"
-	android:paddingLeft="@dimen/size_16"
-	android:paddingRight="@dimen/size_16"
-	tools:context=".activitydemo.startupmode.StandardActivity">
+	tools:context=".activitydemo.ActActivity">
 
-	<TextView
-		android:id="@+id/text_task"
+
+	<Button
+		android:id="@+id/btn_start_up_mode"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_margin="@dimen/size_16"
-		android:textColor="@color/colorFont33" />
+		android:onClick="onClick"
+		android:text="Activity启动模式" />
 
-	<TextView
-		android:id="@+id/text_life_order"
+	<Button
+		android:id="@+id/btn_intent_flag"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="@dimen/size_16"
-		android:textColor="@color/colorFont33" />
+		android:onClick="onClick"
+		android:text="Intent标记 flag" />
 
 </LinearLayout>

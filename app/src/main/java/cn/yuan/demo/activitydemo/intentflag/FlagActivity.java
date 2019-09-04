@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.yuan.activitydemo.intentflag;
+package cn.yuan.demo.activitydemo.intentflag;
 
 import android.content.Intent;
 import android.view.View;
 
-import cn.yuan.activitydemo.R;
+import cn.yuan.demo.R;
+import cn.yuan.demo.StringAdapter;
 import yuan.core.dialog.DialogUtil;
 import yuan.core.list.BaseViewHolder;
 import yuan.core.list.GridDivider;
@@ -33,7 +34,7 @@ import yuan.core.ui.RecyclerActivity;
  * @author yuanye
  * @date 2019/9/3 15:30
  */
-@Adapter(adapter = FlagAdapter.class)
+@Adapter(adapter = StringAdapter.class)
 public class FlagActivity extends RecyclerActivity {
 
     @Override

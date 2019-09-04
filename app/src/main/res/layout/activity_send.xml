@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:paddingLeft="@dimen/size_16"
+	android:paddingRight="@dimen/size_16"
+	tools:context="cn.yuan.demo.ipcdemo.bundle.SendActivity">
+
+	<TextView
+		android:id="@+id/text_process"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/size_16"
+		android:textColor="@color/colorFont33"
+		android:textSize="@dimen/font_15" />
+
+	<Button
+		android:id="@+id/btn_normal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/size_16"
+		android:onClick="onClick"
+		android:text="发送数据" />
+
+	<Button
+		android:id="@+id/btn_other"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/size_16"
+		android:onClick="onClick"
+		android:text="发送数据二"
+		android:visibility="gone" />
+
+</LinearLayout>
