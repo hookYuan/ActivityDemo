@@ -6,7 +6,6 @@ import android.widget.TextView;
 import cn.yuan.demo.R;
 import yuan.core.mvp.BaseActivity;
 import yuan.core.title.ActionBarUtil;
-import yuan.core.tool.Kits;
 
 
 /**
@@ -42,7 +41,6 @@ public class ReceiveActivity extends BaseActivity {
         if (TextUtils.isEmpty(str)) {
             str = getIntent().getExtras().getString("data");
         }
-
 
 
         textReceive.setText("接收到的数据为：" + str);

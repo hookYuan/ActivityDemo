@@ -12,6 +12,20 @@
 		<activity
 			android:name=".ipcdemo.bundle.ReceiveActivity"
 			android:process=":receive"></activity>
+
+		<service
+			android:name=".ipcdemo.messenger.MessengerService"
+			android:process=":messenger"></service>
+
+		<service
+			android:name=".ipcdemo.binder.BinderService"
+			android:process=":binder"></service>
+
+		<service
+			android:name=".ipcdemo.aidl.AIDLService"
+			android:process=":aidl"></service>
+
+
 		<activity android:name=".ipcdemo.bundle.SendActivity" />
 		<activity android:name=".MainActivity">
 			<intent-filter>

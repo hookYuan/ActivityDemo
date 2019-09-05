@@ -41,9 +41,10 @@ public class IPCActivity extends RecyclerActivity {
         mRecyclerView.addItemDecoration(new GridDivider());
 
         mData.add("Bundle通讯");
+        mData.add("Messenger通讯");
+        mData.add("Binder通讯");
         mData.add("文件共享通讯");
         mData.add("AIDL通讯");
-        mData.add("Messenger通讯");
         mData.add("ContentProvider通讯");
     }
 
