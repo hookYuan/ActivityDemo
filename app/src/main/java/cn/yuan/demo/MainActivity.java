@@ -4,6 +4,7 @@ import android.view.View;
 
 import cn.yuan.demo.activitydemo.ActActivity;
 import cn.yuan.demo.ipcdemo.IPCActivity;
+import cn.yuan.demo.viewdemo.ViewActivity;
 import yuan.core.list.BaseViewHolder;
 import yuan.core.list.GridDivider;
 import yuan.core.list.RecyclerAdapter;
@@ -27,6 +28,7 @@ public class MainActivity extends RecyclerActivity {
 
         mData.add("Activity 示例");
         mData.add("进程通讯IPC 示例");
+        mData.add("自定义View 示例");
     }
 
     @Override
@@ -40,6 +42,9 @@ public class MainActivity extends RecyclerActivity {
                         break;
                     case 1:
                         RouteUtil.open(mContext, IPCActivity.class);
+                        break;
+                    case 2:
+                        RouteUtil.open(mContext, ViewActivity.class);
                         break;
                 }
             }

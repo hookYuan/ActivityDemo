@@ -1,5 +1,8 @@
 package cn.yuan.demo;
 
+import android.view.ViewConfiguration;
+import android.view.ViewParent;
+
 import java.util.List;
 
 import yuan.core.list.BaseViewHolder;
@@ -20,5 +23,7 @@ public class StringAdapter extends RecyclerAdapter<String> {
     @Override
     public void onBindHolder(BaseViewHolder holder, String item, int position) {
         holder.setText(android.R.id.text1, item);
+        ViewConfiguration.get(mContext)
+                .getKeyRepeatTimeout();
     }
 }

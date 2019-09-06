@@ -9,22 +9,21 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme">
+		<activity android:name=".viewdemo.bezier.BezierActivity"></activity>
+		<activity android:name=".viewdemo.ViewActivity" />
 		<activity
 			android:name=".ipcdemo.bundle.ReceiveActivity"
-			android:process=":receive"></activity>
+			android:process=":receive" />
 
 		<service
 			android:name=".ipcdemo.messenger.MessengerService"
-			android:process=":messenger"></service>
-
+			android:process=":messenger" />
 		<service
 			android:name=".ipcdemo.binder.BinderService"
-			android:process=":binder"></service>
-
+			android:process=":binder" />
 		<service
 			android:name=".ipcdemo.aidl.AIDLService"
-			android:process=":aidl"></service>
-
+			android:process=":aidl" />
 
 		<activity android:name=".ipcdemo.bundle.SendActivity" />
 		<activity android:name=".MainActivity">
